@@ -10,7 +10,6 @@ public class LoginPage {
 	
 	WebDriver driver;
 	
-	// new comment from suhaib
 	public LoginPage(WebDriver ldriver)
 	{
 		this.driver=ldriver;
