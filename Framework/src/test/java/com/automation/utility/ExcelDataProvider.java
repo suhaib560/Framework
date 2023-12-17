@@ -30,9 +30,7 @@ public class ExcelDataProvider {
 		
 		
 	}
-	
 
-	
 	public String getStringData(String SheetName, int row, int column) 
 	{
 	return wb.getSheet(SheetName).getRow(row).getCell(column).getStringCellValue();

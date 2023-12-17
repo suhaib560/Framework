@@ -20,7 +20,7 @@ public class Helper {
 		try {
 			FileHandler.copy(src, new File("./Screenshots/FreeCRM_" + getCurrentDateTime() + ".png"));
 		} catch (IOException e) {
-			System.out.println("Unable o captire screenshot" + e.getMessage());
+			System.out.println("Unable to capture screenshot" + e.getMessage());
 		}
 		return screenshotPath;
 	}

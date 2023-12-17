@@ -29,7 +29,7 @@ public class BaseClass {
 
 	@BeforeSuite
 	public void setUpSuite() throws FileNotFoundException {
-		Reporter.log("Setting uo reports and Test is getting ready", true);
+		Reporter.log("Setting up reports and Test is getting ready", true);
 
 		excel = new ExcelDataProvider();
 		config = new ConfigDataProvider();
