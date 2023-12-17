@@ -21,6 +21,7 @@ public class LoginPage {
 	
 	@FindBy(xpath="//div[@class='ui fluid large blue submit button']") WebElement loginButton;
 	
+	
 	public void loginToCRM(String usernameApp, String passwordApp)
 	{
 		username.sendKeys(usernameApp);
