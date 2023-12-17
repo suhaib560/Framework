@@ -3,6 +3,7 @@
   <test name="Test">
     <classes>
       <class name="com.automation.testcases.LoginTest"/>
+      <class name="com.automation.pages.BaseClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
