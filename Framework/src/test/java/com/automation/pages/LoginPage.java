@@ -10,9 +10,9 @@ public class LoginPage {
 	
 	WebDriver driver;
 	
-	public LoginPage(WebDriver ldriver)
+	public LoginPage(WebDriver driver)
 	{
-		this.driver=ldriver;
+		this.driver=driver;
 	}
 	
 	@FindBy(name="email") WebElement username;

@@ -35,7 +35,7 @@ public class BaseClass {
 		excel = new ExcelDataProvider();
 		config = new ConfigDataProvider();
 
-		ExtentSparkReporter extent = new ExtentSparkReporter("D:\\Eclipse\\Framework\\Reports\\FreeCRM_" + Helper.getCurrentDateTime() + ".html");
+		ExtentSparkReporter extent = new ExtentSparkReporter("C:\\Users\\dell\\git\\Framework\\Framework\\Reports\\FreeCRM_" + Helper.getCurrentDateTime() + ".html");
 		report = new ExtentReports();
 		report.attachReporter(extent);
 
@@ -43,22 +43,16 @@ public class BaseClass {
 
 	}
 
-	@Parameters({"Browser","appTestURL"})
+	
 	@BeforeClass
-	public void setUp(String browser, String URL) {
+	public void setUp() {
 		Reporter.log("Trying to start Browser and Getting Application ready", true);
 
-		//driver = BrowserFactory.startApplication(driver, config.getBroswer(), config.getStagingURL());
-		driver = BrowserFactory.startApplication(driver, browser, URL);
+		driver = BrowserFactory.startApplication(driver, config.getBroswer(), config.getStagingURL());
+		//driver = BrowserFactory.startApplication(driver, browser, URL);
 
 		Reporter.log("Browser and application is up and ready ", true);
 	}
-
-	@AfterClass
-	public void tearDown() {
-		BrowserFactory.quitBrowser(driver);
-	}
-
 	@AfterMethod
 	public void tearDownMethd(ITestResult result) {
 		
@@ -75,6 +69,10 @@ public class BaseClass {
 		
 		Reporter.log("Test completed >>> Reports are Generated", true);
 		
+	}
+	@AfterClass
+	public void tearDown() {
+		//BrowserFactory.quitBrowser(driver);
 	}
 
 }

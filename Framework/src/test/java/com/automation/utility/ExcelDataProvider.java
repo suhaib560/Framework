@@ -14,14 +14,12 @@ public class ExcelDataProvider {
 
 	public ExcelDataProvider() throws FileNotFoundException
 	{
-		File src = new File("D:\\Eclipse\\Framework\\TestData\\TestData.xlsx");
+		File src = new File("C:\\Users\\dell\\git\\Framework\\Framework\\TestData\\TestData.xlsx");
 		
 		FileInputStream fis = new FileInputStream(src);
 		
 		try {
 			  wb = new XSSFWorkbook(fis);
-			
-	
 			 
 		} catch (IOException e) {
 			

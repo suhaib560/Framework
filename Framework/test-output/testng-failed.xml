@@ -6,8 +6,8 @@
       <class name="com.automation.testcases.LoginTest">
         <methods>
           <include name="loginApp"/>
-          <include name="setUp"/>
           <include name="setUpSuite"/>
+          <include name="setUp"/>
           <include name="tearDownMethd"/>
           <include name="tearDown"/>
         </methods>
