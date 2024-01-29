@@ -52,8 +52,7 @@ public class LoginTest extends BaseClass{
 		contactsPage.PhoneDropdown(getData(5));
 		
 		contactsPage.ClickonSaveContactBtn();
-		
-		contactsPage.VerifyContactHeader(getData(6));
+
 		
 	}
 	

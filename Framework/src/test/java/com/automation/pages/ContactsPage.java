@@ -40,6 +40,8 @@ public class ContactsPage extends BaseClass {
 	
 	@FindBy(xpath="//div[@class='ui label'][.='Middle name(s)']") WebElement ContactHeader;
 	
+	@FindBy(xpath="//i[@class='black bell outline icon']") WebElement NotificationIcon;
+	
 	
 	public void clickonContactsLeftTab()
 	{
@@ -126,6 +128,11 @@ public class ContactsPage extends BaseClass {
 		System.out.println(header);
 		Assert.assertEquals(header,Header);
 		}
+	public void ClickNotificationIcon()
+	{
+		NotificationIcon.click();		
+	}
+	
 	
 	} 
 
