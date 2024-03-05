@@ -1,0 +1,10 @@
+
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="login.LoginTests"/>
+      <class name="base.BaseTests"/>
+      <class name="hover.HoverTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
